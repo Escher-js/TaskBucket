@@ -17,17 +17,34 @@ def json_to_html(json_file, html_file):
     <meta charset="UTF-8">
     <title>JSON to HTML Table</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222831;
+            color: #eeeeee;
+        }
         table {
             border-collapse: collapse;
             width: 100%;
+            table-layout: fixed;
         }
         th, td {
-            border: 1px solid black;
+            border: none;
             padding: 8px;
             text-align: left;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #393e46;
+            padding: 12px;
+        }
+        td {
+            background-color: #30475e;
+            max-width: 150px;
+            white-space: pre-wrap; /* 改行を有効にする */
+            word-wrap: break-word; /* 単語がセルの幅を超えた場合に改行する */
         }
     </style>
 </head>
@@ -45,7 +62,7 @@ def json_to_html(json_file, html_file):
     for i in range(5):
         html += f'<tr><th>緊急度 {i + 1}</th>'
         for j in range(5):
-            html += f'<td>{", ".join(tasks[i][j])}</td>'
+            html += f'<td>{"<br>".join(tasks[i][j])}</td>'
         html += '</tr>'
 
     html += '''    </tbody>
