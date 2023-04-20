@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <title>JSON to HTML Table</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222831;
+            color: #eeeeee;
+        }
         table {
             border-collapse: collapse;
             width: 100%;
+            table-layout: fixed;
         }
         th, td {
-            border: 1px solid black;
+            border: none;
             padding: 8px;
             text-align: left;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #393e46;
+            padding: 12px;
+        }
+        td {
+            background-color: #30475e;
+            max-width: 150px;
+            white-space: pre-wrap; /* 改行を有効にする */
+            word-wrap: break-word; /* 単語がセルの幅を超えた場合に改行する */
         }
     </style>
 </head>
@@ -23,7 +40,7 @@
         <thead>
             <tr>
                 <th></th>
-<th>重要度 1</th><th>重要度 2</th><th>重要度 3</th><th>重要度 4</th><th>重要度 5</th></tr></thead><tbody><tr><th>緊急度 1</th><td></td><td></td><td></td><td></td><td></td></tr><tr><th>緊急度 2</th><td></td><td></td><td>インキュベーションプログラムの日程把握, 長坂さんに連絡、資料送付</td><td>博士課程奨学金の申請, 博士課程奨学金の詳細を調べる, 必要書類の準備, 申請書類の提出</td><td></td></tr><tr><th>緊急度 3</th><td></td><td></td><td>foundXに出す, 1st roundに出す, bootstrapでUIの見栄え調整, firebaseでOAuth機能の実装, firebaseでデータベース機能の実装</td><td>ビジネスモデルと収益の概算を出す, ピッチ資料を作成する, ピッチ資料のアウトラインを文面で作成, ピッチ資料ラフ作成, 資料のファイナライズ</td><td>資金の使途を明確にする</td></tr><tr><th>緊急度 4</th><td></td><td></td><td></td><td>レポジトリCRUD機能の実装, firebaseへの移行, firebaseでfunctionsの実装</td><td>資金調達, アルファ版のリリース</td></tr><tr><th>緊急度 5</th><td></td><td></td><td></td><td></td><td></td></tr>    </tbody>
+<th>重要度 1</th><th>重要度 2</th><th>重要度 3</th><th>重要度 4</th><th>重要度 5</th></tr></thead><tbody><tr><th>緊急度 1</th><td></td><td></td><td></td><td></td><td></td></tr><tr><th>緊急度 2</th><td></td><td></td><td>インキュベーションプログラムの日程把握<br>長坂さんに連絡、資料送付</td><td>博士課程奨学金の申請<br>博士課程奨学金の詳細を調べる<br>必要書類の準備<br>申請書類の提出</td><td></td></tr><tr><th>緊急度 3</th><td></td><td></td><td>foundXに出す<br>1st roundに出す<br>bootstrapでUIの見栄え調整<br>firebaseでOAuth機能の実装<br>firebaseでデータベース機能の実装</td><td>ビジネスモデルと収益の概算を出す<br>ピッチ資料を作成する<br>ピッチ資料のアウトラインを文面で作成<br>ピッチ資料ラフ作成<br>資料のファイナライズ</td><td>資金の使途を明確にする</td></tr><tr><th>緊急度 4</th><td></td><td></td><td></td><td>レポジトリCRUD機能の実装<br>firebaseへの移行<br>firebaseでfunctionsの実装</td><td>資金調達<br>アルファ版のリリース</td></tr><tr><th>緊急度 5</th><td></td><td></td><td></td><td></td><td></td></tr>    </tbody>
     </table>
 </body>
 </html>
