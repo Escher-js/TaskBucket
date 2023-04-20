@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+        <html lang="ja">
+        <head>
+        <meta charset="UTF-8">
+        <title>JSON to HTML Table</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #222831;
+                color: #eeeeee;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                table-layout: fixed;
+            }
+            th, td {
+                border: none;
+                padding: 8px;
+                text-align: left;
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #393e46;
+                padding: 12px;
+            }
+            td {
+                background-color: #30475e;
+                max-width: 150px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            tbody tr {
+                height: 20%;
+            }
+            .item {
+                display: inline-block;
+                border: 1px solid #eeeeee;
+                border-radius: 5px;
+                padding: 2px 5px;
+                margin: 2px;
+                cursor: grab;
+            }
+        </style>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+    <th>重要度 1</th><th>重要度 2</th><th>重要度 3</th><th>重要度 4</th><th>重要度 5</th></tr></thead><tbody><tr><th>緊急度 1</th><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td></tr><tr><th>緊急度 2</th><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">インキュベーションプログラムの日程把握</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">長坂さんに連絡、資料送付</span></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">博士課程奨学金の申請</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">博士課程奨学金の詳細を調べる</span><br><span class="item" id="item3" draggable="true" ondragstart="drag(event)">必要書類の準備</span><br><span class="item" id="item4" draggable="true" ondragstart="drag(event)">申請書類の提出</span></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td></tr><tr><th>緊急度 3</th><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">foundXに出す</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">1st roundに出す</span><br><span class="item" id="item3" draggable="true" ondragstart="drag(event)">bootstrapでUIの見栄え調整</span><br><span class="item" id="item4" draggable="true" ondragstart="drag(event)">firebaseでOAuth機能の実装</span><br><span class="item" id="item5" draggable="true" ondragstart="drag(event)">firebaseでデータベース機能の実装</span></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">ビジネスモデルと収益の概算を出す</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">ピッチ資料を作成する</span><br><span class="item" id="item3" draggable="true" ondragstart="drag(event)">ピッチ資料のアウトラインを文面で作成</span><br><span class="item" id="item4" draggable="true" ondragstart="drag(event)">ピッチ資料ラフ作成</span><br><span class="item" id="item5" draggable="true" ondragstart="drag(event)">資料のファイナライズ</span></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">資金の使途を明確にする</span></td></tr><tr><th>緊急度 4</th><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">レポジトリCRUD機能の実装</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">firebaseへの移行</span><br><span class="item" id="item3" draggable="true" ondragstart="drag(event)">firebaseでfunctionsの実装</span></td><td ondrop="drop(event)" ondragover="allowDrop(event)"><span class="item" id="item1" draggable="true" ondragstart="drag(event)">資金調達</span><br><span class="item" id="item2" draggable="true" ondragstart="drag(event)">アルファ版のリリース</span></td></tr><tr><th>緊急度 5</th><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td><td ondrop="drop(event)" ondragover="allowDrop(event)"></td></tr>
+        </tbody>
+        </table>
+        </body>
+        </html>
+    
