@@ -1,0 +1,156 @@
+[
+    {
+        "name": "資金調達",
+        "detail": "目標300万。プロダクト実装をするのにエンジニアを雇うため。",
+        "urgency": 4,
+        "importance": 5,
+        "parent": null
+    },
+    {
+        "name": "資金の使途を明確にする",
+        "detail": "資金がどのように使われるかを明確にし、投資家に説得力のある説明ができるようにする。",
+        "urgency": 3,
+        "importance": 5,
+        "parent": "資金調達"
+    },
+    {
+        "name": "ビジネスモデルと収益の概算を出す",
+        "detail": "事業の収益性を評価し、投資家にビジネスの成長性を示す。",
+        "urgency": 3,
+        "importance": 4,
+        "parent": "資金調達"
+    },
+    {
+        "name": "ピッチ資料を作成する",
+        "detail": "投資家にプロジェクトの概要と目標を伝えるための資料を作成する。",
+        "urgency": 3,
+        "importance": 4,
+        "parent": "資金調達"
+    },
+    {
+        "name": "ピッチ資料のアウトラインを文面で作成",
+        "detail": "ピッチ資料の全体構成を明確にするため、アウトラインを作成する。",
+        "urgency": 3,
+        "importance": 4,
+        "parent": "ピッチ資料を作成する"
+    },
+    {
+        "name": "ピッチ資料ラフ作成",
+        "detail": "アウトラインに基づいて、実際の資料のラフ版を作成する。",
+        "urgency": 3,
+        "importance": 4,
+        "parent": "ピッチ資料を作成する"
+    },
+    {
+        "name": "資料のファイナライズ",
+        "detail": "フィードバックを受けて、資料を最終版に仕上げる。",
+        "urgency": 3,
+        "importance": 4,
+        "parent": "ピッチ資料を作成する"
+    },
+    {
+        "name": "foundXに出す",
+        "detail": "インキュベーションプログラムへの応募を行い、資金調達の機会を増やす。",
+        "urgency": 3,
+        "importance": 3,
+        "parent": "資金調達"
+    },
+    {
+        "name": "1st roundに出す",
+        "detail": "別のインキュベーションプログラムにも応募し、資金調達の機会を広げる。",
+        "urgency": 3,
+        "importance": 3,
+        "parent": "資金調達"
+    },
+    {
+        "name": "インキュベーションプログラムの日程把握",
+        "detail": "インキュベーションプログラムの日程を把握し、タイムラインを作成する。",
+        "urgency": 2,
+        "importance": 3,
+        "parent": "資金調達"
+    },
+    {
+        "name": "長坂さんに連絡、資料送付",
+        "detail": "長坂さんと連絡を取り、プロジェクトの進捗状況を共有する。",
+        "urgency": 2,
+        "importance": 3,
+        "parent": "資金調達"
+    },
+    {
+        "name": "アルファ版のリリース",
+        "detail": "プロダクトのアルファ版をリリースし、ユーザーからフィードバックを受け取る。",
+        "urgency": 4,
+        "importance": 5,
+        "parent": null
+    },
+    {
+        "name": "レポジトリCRUD機能の実装",
+        "detail": "アプリケーションの基本的なCRUD機能を実装する。",
+        "urgency": 4,
+        "importance": 4,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "firebaseへの移行",
+        "detail": "アプリケーションをfirebaseに移行し、スケーラビリティとセキュリティを向上させる。",
+        "urgency": 4,
+        "importance": 4,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "firebaseでfunctionsの実装",
+        "detail": "firebase functionsを使用して、サーバーレスアーキテクチャを構築する。",
+        "urgency": 4,
+        "importance": 4,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "bootstrapでUIの見栄え調整",
+        "detail": "bootstrapを使用して、アプリケーションのUIを改善し、ユーザーフレンドリーにする。",
+        "urgency": 3,
+        "importance": 3,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "firebaseでOAuth機能の実装",
+        "detail": "firebaseを使用してOAuth機能を実装し、ユーザーのログイン・認証を簡単に行えるようにする。",
+        "urgency": 3,
+        "importance": 3,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "firebaseでデータベース機能の実装",
+        "detail": "firebaseのデータベース機能を活用し、アプリケーション内でデータの保存・取得を行えるようにする。",
+        "urgency": 3,
+        "importance": 3,
+        "parent": "アルファ版のリリース"
+    },
+    {
+        "name": "博士課程奨学金の申請",
+        "detail": "博士課程における研究費を確保するために奨学金を申請する。",
+        "urgency": 2,
+        "importance": 4,
+        "parent": null
+    },
+    {
+        "name": "博士課程奨学金の詳細を調べる",
+        "detail": "奨学金の申請条件や提出書類を把握するため、詳細情報を調べる。",
+        "urgency": 2,
+        "importance": 4,
+        "parent": "博士課程奨学金の申請"
+    },
+    {
+        "name": "必要書類の準備",
+        "detail": "奨学金申請に必要な書類を揃え、申請準備を行う。",
+        "urgency": 2,
+        "importance": 4,
+        "parent": "博士課程奨学金の申請"
+    },
+    {
+        "name": "申請書類の提出",
+        "detail": "奨学金申請のため、必要書類を提出する。",
+        "urgency": 2,
+        "importance": 4,
+        "parent": "博士課程奨学金の申請"
+    }
+]

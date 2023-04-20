@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON to HTML Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>名前</th>
+                <th>詳細</th>
+                <th>緊急度</th>
+                <th>重要度</th>
+                <th>親</th>
+            </tr>
+        </thead>
+        <tbody>
+<tr>
+            <td>資金調達</td>
+            <td>目標300万。プロダクト実装をするのにエンジニアを雇うため。</td>
+            <td>4</td>
+            <td>5</td>
+            <td>null</td>
+        </tr>
+<tr>
+            <td>資金の使途を明確にする</td>
+            <td>資金がどのように使われるかを明確にし、投資家に説得力のある説明ができるようにする。</td>
+            <td>3</td>
+            <td>5</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>ビジネスモデルと収益の概算を出す</td>
+            <td>事業の収益性を評価し、投資家にビジネスの成長性を示す。</td>
+            <td>3</td>
+            <td>4</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>ピッチ資料を作成する</td>
+            <td>投資家にプロジェクトの概要と目標を伝えるための資料を作成する。</td>
+            <td>3</td>
+            <td>4</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>ピッチ資料のアウトラインを文面で作成</td>
+            <td>ピッチ資料の全体構成を明確にするため、アウトラインを作成する。</td>
+            <td>3</td>
+            <td>4</td>
+            <td>ピッチ資料を作成する</td>
+        </tr>
+<tr>
+            <td>ピッチ資料ラフ作成</td>
+            <td>アウトラインに基づいて、実際の資料のラフ版を作成する。</td>
+            <td>3</td>
+            <td>4</td>
+            <td>ピッチ資料を作成する</td>
+        </tr>
+<tr>
+            <td>資料のファイナライズ</td>
+            <td>フィードバックを受けて、資料を最終版に仕上げる。</td>
+            <td>3</td>
+            <td>4</td>
+            <td>ピッチ資料を作成する</td>
+        </tr>
+<tr>
+            <td>foundXに出す</td>
+            <td>インキュベーションプログラムへの応募を行い、資金調達の機会を増やす。</td>
+            <td>3</td>
+            <td>3</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>1st roundに出す</td>
+            <td>別のインキュベーションプログラムにも応募し、資金調達の機会を広げる。</td>
+            <td>3</td>
+            <td>3</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>インキュベーションプログラムの日程把握</td>
+            <td>インキュベーションプログラムの日程を把握し、タイムラインを作成する。</td>
+            <td>2</td>
+            <td>3</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>長坂さんに連絡、資料送付</td>
+            <td>長坂さんと連絡を取り、プロジェクトの進捗状況を共有する。</td>
+            <td>2</td>
+            <td>3</td>
+            <td>資金調達</td>
+        </tr>
+<tr>
+            <td>アルファ版のリリース</td>
+            <td>プロダクトのアルファ版をリリースし、ユーザーからフィードバックを受け取る。</td>
+            <td>4</td>
+            <td>5</td>
+            <td>null</td>
+        </tr>
+<tr>
+            <td>レポジトリCRUD機能の実装</td>
+            <td>アプリケーションの基本的なCRUD機能を実装する。</td>
+            <td>4</td>
+            <td>4</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>firebaseへの移行</td>
+            <td>アプリケーションをfirebaseに移行し、スケーラビリティとセキュリティを向上させる。</td>
+            <td>4</td>
+            <td>4</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>firebaseでfunctionsの実装</td>
+            <td>firebase functionsを使用して、サーバーレスアーキテクチャを構築する。</td>
+            <td>4</td>
+            <td>4</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>bootstrapでUIの見栄え調整</td>
+            <td>bootstrapを使用して、アプリケーションのUIを改善し、ユーザーフレンドリーにする。</td>
+            <td>3</td>
+            <td>3</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>firebaseでOAuth機能の実装</td>
+            <td>firebaseを使用してOAuth機能を実装し、ユーザーのログイン・認証を簡単に行えるようにする。</td>
+            <td>3</td>
+            <td>3</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>firebaseでデータベース機能の実装</td>
+            <td>firebaseのデータベース機能を活用し、アプリケーション内でデータの保存・取得を行えるようにする。</td>
+            <td>3</td>
+            <td>3</td>
+            <td>アルファ版のリリース</td>
+        </tr>
+<tr>
+            <td>博士課程奨学金の申請</td>
+            <td>博士課程における研究費を確保するために奨学金を申請する。</td>
+            <td>2</td>
+            <td>4</td>
+            <td>null</td>
+        </tr>
+<tr>
+            <td>博士課程奨学金の詳細を調べる</td>
+            <td>奨学金の申請条件や提出書類を把握するため、詳細情報を調べる。</td>
+            <td>2</td>
+            <td>4</td>
+            <td>博士課程奨学金の申請</td>
+        </tr>
+<tr>
+            <td>必要書類の準備</td>
+            <td>奨学金申請に必要な書類を揃え、申請準備を行う。</td>
+            <td>2</td>
+            <td>4</td>
+            <td>博士課程奨学金の申請</td>
+        </tr>
+<tr>
+            <td>申請書類の提出</td>
+            <td>奨学金申請のため、必要書類を提出する。</td>
+            <td>2</td>
+            <td>4</td>
+            <td>博士課程奨学金の申請</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
