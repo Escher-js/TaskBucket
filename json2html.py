@@ -4,6 +4,13 @@ def json_to_html(json_file, html_file):
     with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    tasks = [[[] for _ in range(5)] for _ in range(5)]
+
+    for item in data:
+        urgency_idx = item["urgency"] - 1
+        importance_idx = item["importance"] - 1
+        tasks[urgency_idx][importance_idx].append(item["name"])
+
     html = '''<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,27 +35,20 @@ def json_to_html(json_file, html_file):
     <table>
         <thead>
             <tr>
-                <th>名前</th>
-                <th>詳細</th>
-                <th>緊急度</th>
-                <th>重要度</th>
-                <th>親</th>
-            </tr>
-        </thead>
-        <tbody>
+                <th></th>
 '''
 
-    for item in data:
-        html += f'''<tr>
-            <td>{item["name"]}</td>
-            <td>{item["detail"]}</td>
-            <td>{item["urgency"]}</td>
-            <td>{item["importance"]}</td>
-            <td>{item["parent"] if item["parent"] else "null"}</td>
-        </tr>
-'''
+    for i in range(1, 6):
+        html += f'<th>重要度 {i}</th>'
+    html += '</tr></thead><tbody>'
 
-    html += '''        </tbody>
+    for i in range(5):
+        html += f'<tr><th>緊急度 {i + 1}</th>'
+        for j in range(5):
+            html += f'<td>{", ".join(tasks[i][j])}</td>'
+        html += '</tr>'
+
+    html += '''    </tbody>
     </table>
 </body>
 </html>
