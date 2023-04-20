@@ -46,6 +46,17 @@ def json_to_html(json_file, html_file):
             white-space: pre-wrap; /* 改行を有効にする */
             word-wrap: break-word; /* 単語がセルの幅を超えた場合に改行する */
         }
+        tbody tr {
+    height: 20%; /* 各行の高さを均等にする */
+}
+.item {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
     </style>
 </head>
 <body>
@@ -55,15 +66,15 @@ def json_to_html(json_file, html_file):
                 <th></th>
 '''
 
-    for i in range(1, 6):
-        html += f'<th>重要度 {i}</th>'
-    html += '</tr></thead><tbody>'
-
     for i in range(5):
         html += f'<tr><th>緊急度 {i + 1}</th>'
         for j in range(5):
-            html += f'<td>{"<br>".join(tasks[i][j])}</td>'
+            task_list = tasks[i][j]
+            task_items = ['<span class="item">' + task + '</span>' for task in task_list]
+            task_html = "<br>".join(task_items)
+            html += f'<td>{task_html}</td>'
         html += '</tr>'
+
 
     html += '''    </tbody>
     </table>

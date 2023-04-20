@@ -33,6 +33,17 @@
             white-space: pre-wrap; /* 改行を有効にする */
             word-wrap: break-word; /* 単語がセルの幅を超えた場合に改行する */
         }
+        tbody tr {
+    height: 20%; /* 各行の高さを均等にする */
+}
+.item {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
     </style>
 </head>
 <body>
@@ -40,7 +51,7 @@
         <thead>
             <tr>
                 <th></th>
-<th>重要度 1</th><th>重要度 2</th><th>重要度 3</th><th>重要度 4</th><th>重要度 5</th></tr></thead><tbody><tr><th>緊急度 1</th><td></td><td></td><td></td><td></td><td></td></tr><tr><th>緊急度 2</th><td></td><td></td><td>インキュベーションプログラムの日程把握<br>長坂さんに連絡、資料送付</td><td>博士課程奨学金の申請<br>博士課程奨学金の詳細を調べる<br>必要書類の準備<br>申請書類の提出</td><td></td></tr><tr><th>緊急度 3</th><td></td><td></td><td>foundXに出す<br>1st roundに出す<br>bootstrapでUIの見栄え調整<br>firebaseでOAuth機能の実装<br>firebaseでデータベース機能の実装</td><td>ビジネスモデルと収益の概算を出す<br>ピッチ資料を作成する<br>ピッチ資料のアウトラインを文面で作成<br>ピッチ資料ラフ作成<br>資料のファイナライズ</td><td>資金の使途を明確にする</td></tr><tr><th>緊急度 4</th><td></td><td></td><td></td><td>レポジトリCRUD機能の実装<br>firebaseへの移行<br>firebaseでfunctionsの実装</td><td>資金調達<br>アルファ版のリリース</td></tr><tr><th>緊急度 5</th><td></td><td></td><td></td><td></td><td></td></tr>    </tbody>
+<tr><th>緊急度 1</th><td></td><td></td><td></td><td></td><td></td></tr><tr><th>緊急度 2</th><td></td><td></td><td><span class="item">インキュベーションプログラムの日程把握</span><br><span class="item">長坂さんに連絡、資料送付</span></td><td><span class="item">博士課程奨学金の申請</span><br><span class="item">博士課程奨学金の詳細を調べる</span><br><span class="item">必要書類の準備</span><br><span class="item">申請書類の提出</span></td><td></td></tr><tr><th>緊急度 3</th><td></td><td></td><td><span class="item">foundXに出す</span><br><span class="item">1st roundに出す</span><br><span class="item">bootstrapでUIの見栄え調整</span><br><span class="item">firebaseでOAuth機能の実装</span><br><span class="item">firebaseでデータベース機能の実装</span></td><td><span class="item">ビジネスモデルと収益の概算を出す</span><br><span class="item">ピッチ資料を作成する</span><br><span class="item">ピッチ資料のアウトラインを文面で作成</span><br><span class="item">ピッチ資料ラフ作成</span><br><span class="item">資料のファイナライズ</span></td><td><span class="item">資金の使途を明確にする</span></td></tr><tr><th>緊急度 4</th><td></td><td></td><td></td><td><span class="item">レポジトリCRUD機能の実装</span><br><span class="item">firebaseへの移行</span><br><span class="item">firebaseでfunctionsの実装</span></td><td><span class="item">資金調達</span><br><span class="item">アルファ版のリリース</span></td></tr><tr><th>緊急度 5</th><td></td><td></td><td></td><td></td><td></td></tr>    </tbody>
     </table>
 </body>
 </html>
