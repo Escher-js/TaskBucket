@@ -1,12 +1,8 @@
 import React from 'react';
 import TaskTable from './components/TaskTable';
 import { jsonToTasks } from './utils/jsonToTasks';
+import jsonData from './data/tasks.json';
 import './App.css';
-
-// 与えられたJSONデータ
-const jsonData = [
-  // JSONデータをここに配置する
-];
 
 // JSONデータを2次元配列に変換する
 const tasks = jsonToTasks(jsonData);
